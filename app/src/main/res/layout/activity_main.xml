@@ -20,6 +20,7 @@
             android:id="@+id/horaDosPaises"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="serif"
             android:gravity="center_vertical"
             android:text="Hora dos Países"
             android:textAlignment="center"
