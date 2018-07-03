@@ -125,6 +125,7 @@
                 android:text="00"
                 android:textAlignment="center"
                 android:textSize="45sp"
+                android:background="@drawable/background_botao"
                 app:layout_constraintBottom_toBottomOf="@+id/botao_menos_minuto"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/botao_mais_minuto"
@@ -142,11 +143,33 @@
                 android:text="00"
                 android:textAlignment="center"
                 android:textSize="45sp"
+                android:background="@drawable/background_botao"
                 app:layout_constraintBottom_toBottomOf="@+id/botao_menos_hora"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/botao_mais_hora"
                 app:layout_constraintVertical_bias="0.504"
                 tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/botao_ampm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center_vertical"
+                android:text="AM"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_doispontos"
+                app:layout_constraintVertical_bias="0.875" />
         </android.support.constraint.ConstraintLayout>
 
         <android.support.constraint.ConstraintLayout
