@@ -33,8 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:background="@color/AzulBackground">
+        android:background="@color/AzulBackground"
+        android:orientation="vertical">
 
 
         <android.support.constraint.ConstraintLayout
@@ -50,8 +50,8 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="75dp"
                 android:layout_marginTop="56dp"
-                android:text="▲"
                 android:onClick="maisHora"
+                android:text="▲"
                 app:layout_constraintBottom_toTopOf="@+id/botao_menos_hora"
                 app:layout_constraintEnd_toStartOf="@+id/botao_mais_minuto"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -67,12 +67,13 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="75dp"
                 android:layout_marginTop="56dp"
-                android:text="▲"
                 android:onClick="maisMinuto"
+                android:text="▲"
                 app:layout_constraintBottom_toTopOf="@+id/botao_menos_minuto"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="OnClick" />
 
             <Button
                 android:id="@+id/botao_menos_hora"
@@ -81,13 +82,13 @@
                 android:layout_marginBottom="116dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginStart="75dp"
-                android:text="▼"
                 android:onClick="menosHora"
+                android:text="▼"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/botao_menos_minuto"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints,OnClick" />
 
             <Button
                 android:id="@+id/botao_menos_minuto"
@@ -95,11 +96,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="116dp"
                 android:layout_marginEnd="75dp"
-                android:text="▼"
                 android:onClick="menosMinuto"
+                android:text="▼"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints,OnClick" />
 
             <TextView
                 android:id="@+id/textView_doispontos"
@@ -126,11 +127,11 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="88dp"
                 android:layout_marginTop="8dp"
+                android:background="@drawable/background_botao"
                 android:gravity="center_vertical"
                 android:text="00"
                 android:textAlignment="center"
                 android:textSize="45sp"
-                android:background="@drawable/background_botao"
                 app:layout_constraintBottom_toBottomOf="@+id/botao_menos_minuto"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/botao_mais_minuto"
@@ -144,10 +145,10 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginStart="88dp"
                 android:layout_marginTop="8dp"
-                android:text="00"
+                android:background="@drawable/background_botao"
+                android:text="01"
                 android:textAlignment="center"
                 android:textSize="45sp"
-                android:background="@drawable/background_botao"
                 app:layout_constraintBottom_toBottomOf="@+id/botao_menos_hora"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/botao_mais_hora"
@@ -164,8 +165,8 @@
                 android:layout_marginTop="40dp"
                 android:fontFamily="@font/aldrich"
                 android:gravity="center_vertical"
-                android:text="AM"
                 android:onClick="amPm"
+                android:text="AM"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="30sp"
