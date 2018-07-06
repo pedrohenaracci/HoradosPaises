@@ -8,19 +8,154 @@
     tools:context=".UltimaTelaActivity">
 
     <LinearLayout
+        android:id="@+id/layouttopo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_weight="6"
+        android:background="@color/BrancoPuro"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView_topo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:text="Hora dos Países"
+            android:textAlignment="center"
+            android:textColor="@color/PretoPuro"
+            android:textSize="35sp" />
+    </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layoutintermediario"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_weight="1"
+        android:background="@color/AzulBackground"
+        android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutpaises"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/franca" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora selecionada na          França"
+                        android:textAlignment="center"
+                        android:textColor="@color/BrancoPuro"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView_franca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/china" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora selecionada na           China"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/BrancoPuro"/>
+
+                    <TextView
+                        android:id="@+id/textView_china"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/africa_do_sul" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora selecionada na          África do Sul"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/BrancoPuro"/>
+
+                    <TextView
+                        android:id="@+id/textView_africa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
+
+
